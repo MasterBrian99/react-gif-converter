@@ -1,5 +1,5 @@
 {
-  "name": "personal-web__01",
+  "name": "react-gif-convert",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,6 +25,7 @@
       "react-app/jest"
     ]
   },
+  "license" : "MIT",
   "browserslist": {
     "production": [
       ">0.2%",
