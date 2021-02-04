@@ -1,13 +1,150 @@
-body {
+*,
+*::after,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: #777;
+}
+
+.nav-bar {
+  padding: 1rem 0;
+  text-align: center;
+  border-bottom: 1px solid #dfdfdf;
+}
+.nav-bar img {
+  width: 10rem;
+}
+
+.loadScreen {
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.loadScreen img {
+  width: 50rem;
+}
+
+.header {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 1rem 0;
+}
+
+.gif-section {
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+}
+.gif-section label {
+  display: block;
+  font-size: 3rem;
+  padding: 2rem 1rem 0;
+  text-align: center;
+}
+
+input[type="url"],
+input[type="text"] {
+  height: 4rem;
+  padding: 1rem;
+  font-size: 2rem;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid #f73e3e;
+  border-radius: 1rem;
+}
+
+input[type="url"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-radius: 1rem;
+}
+
+.button-wrapper {
+  position: relative;
+  width: 25rem;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.button-wrapper span.label {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: 50%;
+  background: #f73e3e;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.upload {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+h3 {
+  text-align: center;
+  color: #f73e3e;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+
+h3 span {
+  font-size: 5rem;
+}
+
+.select-time {
+  margin: 3rem auto;
+}
+
+.btn-convert {
+  background: #f73e3e;
+  border-radius: 28px;
+  color: #ffffff;
+  font-size: 2.4rem;
+  text-decoration: none;
+  width: 60%;
+  margin: 3rem auto;
+}
+
+.btn-convert:hover {
+  background: #e90000;
+  text-decoration: none;
+}
+.final-gif {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+@media (max-width: 590px) {
+  body {
+    padding: 0 1rem;
+  }
 }
